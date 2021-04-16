@@ -1,2 +1,2 @@
 # upgraded_blog
-Upgraded blog with flask and jinja. Work in progress
+Upgraded blog with flask and jinja using a template. Work in progress
