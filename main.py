@@ -20,8 +20,7 @@ def page(name):
 @app.route("/post.html/<num>")
 def post(num):
     response = requests.get(url="https://api.npoint.io/0067e63917ca7a5034d9").json()
-    # CANT GET INTO THE POST, SAYS ITS A TYPE ERROR, PROBLEM WITH SLICING A JSON DICT
-    blog_post = response[num]
+    blog_post = response[int(num) - 1]
     return render_template("post.html", num=num, response=blog_post)
 
 
